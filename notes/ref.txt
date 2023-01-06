@@ -1,0 +1,18 @@
+## URL- http://localhost:8080/graphql
+
+## Sample payload:
+
+query {
+  oneHello {
+    ...allFields
+  }
+
+  allHellos {
+    ...allFields
+  }
+}
+
+fragment allFields on Hello {
+  text
+  randomNumber
+}
